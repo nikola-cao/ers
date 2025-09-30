@@ -1,5 +1,5 @@
 //
-//  HostRoomView.swift
+//  WaitingRoomView.swift
 //  ers
 //
 //  Created by Patrick Guo on 9/29/25.
@@ -39,7 +39,7 @@ struct WaitingRoomView: View {
                     .buttonStyle(.borderedProminent)
                 }
             }
-            .navigationTitle(isHost ? "Host Room" : "Player Room")
+            .navigationTitle("Waiting Room")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar() {
                 if isHost {

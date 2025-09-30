@@ -16,7 +16,7 @@ struct HomeView: View {
                 }
                 .buttonStyle(.borderedProminent)
                 NavigationLink("Join Game") {
-                    PlayerRoomView()
+                    RoomCodeInputView()
                 }
                 .buttonStyle(.bordered)
             }

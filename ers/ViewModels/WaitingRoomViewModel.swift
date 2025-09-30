@@ -12,7 +12,6 @@ extension WaitingRoomView {
     class ViewModel {
         // placeholder values bc this class needs an initializer with MCSession
         var roomId: String = "ABCD"
-        var isHost: Bool = true
         var playerCount: Int = 1
         var playerId: [String]?
         

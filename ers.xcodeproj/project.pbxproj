@@ -10,9 +10,22 @@
 		1D02CB6A2E88BA5D00FB4D92 /* ers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1D02CB7E2E8B533B00FB4D92 /* Exceptions for "ers" folder in "ers" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1D02CB692E88BA5D00FB4D92 /* ers */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1D02CB6C2E88BA5D00FB4D92 /* ers */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1D02CB7E2E8B533B00FB4D92 /* Exceptions for "ers" folder in "ers" target */,
+			);
 			path = ers;
 			sourceTree = "<group>";
 		};
@@ -256,6 +269,8 @@
 				DEVELOPMENT_TEAM = V86YQ472JY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ers/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "\"This app uses local network to find and connect to other nearby devices to play games together\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -266,7 +281,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nikola.ers;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nikola.ers-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -288,6 +303,8 @@
 				DEVELOPMENT_TEAM = V86YQ472JY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ers/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "\"This app uses local network to find and connect to other nearby devices to play games together\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,7 +315,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nikola.ers;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nikola.ers-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;

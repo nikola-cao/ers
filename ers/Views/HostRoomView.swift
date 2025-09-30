@@ -9,10 +9,14 @@ import SwiftUI
 
 struct HostRoomView: View {
     @State private var vm = ViewModel()
+    @State private var isShowingSheet = false
+    @State private var isDoubleEnabled = true
+    @State private var isSandwichEnabled = true
+    @State private var isMarriageEnabled = true
 
     var body: some View {
         NavigationStack {
-            VStack {
+            VStack(spacing: 32) {
                 VStack {
                     Text("Room Code")
                         .font(.subheadline)
@@ -33,10 +37,42 @@ struct HostRoomView: View {
             }
             .navigationTitle("Host Room")
             .navigationBarTitleDisplayMode(.inline)
-            
+            .toolbar() {
+                Button("", systemImage: "gearshape.fill") {
+                    isShowingSheet.toggle()
+                }
+                .sheet(isPresented: $isShowingSheet) {
+                    settingsSheet
+                }
+            }
         }
-        
     }
+    
+    
+    private var settingsSheet: some View {
+        NavigationStack {
+            List {
+                HStack {
+                    Text("Double")
+                    Spacer()
+                    Toggle("", isOn: $isDoubleEnabled)
+                }
+                HStack {
+                    Text("Sandwich")
+                    Spacer()
+                    Toggle("", isOn: $isSandwichEnabled)
+                }
+                HStack {
+                    Text("Marriage")
+                    Spacer()
+                    Toggle("", isOn: $isMarriageEnabled)
+                }
+            }
+            .navigationTitle("Game Rules")
+            .navigationBarTitleDisplayMode(.inline)
+        }
+    }
+
 }
 
 #Preview {

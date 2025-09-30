@@ -12,7 +12,7 @@ struct HomeView: View {
         NavigationStack {
             VStack {
                 NavigationLink("Host Game") {
-                    HostRoomView()
+                    WaitingRoomView(isHost: true)
                 }
                 .buttonStyle(.borderedProminent)
                 NavigationLink("Join Game") {

@@ -9,10 +9,19 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("ERS Game")
-            .font(.largeTitle)
-        Button("Host Game") {}
-        Button("Join Game") {}
+        NavigationStack {
+            VStack {
+                NavigationLink("Host Game") {
+                    HostRoomView()
+                }
+                .buttonStyle(.borderedProminent)
+                NavigationLink("Join Game") {
+                    PlayerRoomView()
+                }
+                .buttonStyle(.bordered)
+            }
+            .navigationTitle("Home")
+        }
     }
 }
 

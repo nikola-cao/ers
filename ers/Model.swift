@@ -8,10 +8,10 @@
 import Foundation
 
 enum Suit: String, CaseIterable {
-    case spades = "♠️"
-    case hearts = "♥️"
-    case diamonds = "♦️"
-    case clubs = "♣️"
+    case spade = "suit.spade.fill"
+    case heart = "suit.heart.fill"
+    case diamond = "suit.diamond.fill"
+    case club = "suit.club.fill"
 }
 
 enum Rank: Int, CaseIterable {

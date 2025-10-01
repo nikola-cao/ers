@@ -28,6 +28,17 @@ enum Rank: Int, CaseIterable {
     case queen
     case king
     case ace
+
+    var display: String {
+        switch self {
+        case .ten: return "I0"
+        case .jack: return "J"
+        case .queen: return "Q"
+        case .king: return "K"
+        case .ace: return "A"
+        default: return String(self.rawValue)
+        }
+    }
 }
 
 struct Card: Identifiable, Equatable {
